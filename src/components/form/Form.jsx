@@ -56,7 +56,7 @@ React.useEffect(() => {
   }
   fetchData(); 
 
-  },[]);
+  },[dispatch]);
 
 const [errors, setErrors] = React.useState({
    name: '',

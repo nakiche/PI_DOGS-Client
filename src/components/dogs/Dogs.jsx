@@ -39,7 +39,7 @@ export default function Dogs({dogTemperaments,doggies}) {
 
    //creando estados para los filtros
    const [sort,setSort]=React.useState('');
-   const [temperament, setTemperament] = React.useState([]);
+   //const [temperament, setTemperament] = React.useState([]);
 
 
    const handleSelectTemperamentChange = (e) => {
@@ -67,7 +67,7 @@ export default function Dogs({dogTemperaments,doggies}) {
           })
      }
    else{
-     setTemperament(Array.from(e.target.selectedOptions, option => option.value))
+     //setTemperament(Array.from(e.target.selectedOptions, option => option.value))
       }
 
     let pageRedux= (dispatch(getCurrentPage(1)))
@@ -76,17 +76,17 @@ export default function Dogs({dogTemperaments,doggies}) {
    }
 
    //using UseEffect to get lastest state
-   React.useEffect(() => {
-    let filterByTemperament=[]  
+   // React.useEffect(() => {
+   //  let filterByTemperament=[]  
     
-      for (let i = 0; i < doggies.length; i++) {
-         let arraySearch=doggies[i].Temperaments[0].name
-         temperament.some(r=> arraySearch.includes(r)) && filterByTemperament.push(doggies[i])
-      }
-      setDogs({...dogs,
-            filtered:filterByTemperament
-         })
-   }, [temperament]);
+   //    for (let i = 0; i < doggies.length; i++) {
+   //       let arraySearch=doggies[i].Temperaments[0].name
+   //       temperament.some(r=> arraySearch.includes(r)) && filterByTemperament.push(doggies[i])
+   //    }
+   //    setDogs({...dogs,
+   //          filtered:filterByTemperament
+   //       })
+   // }, [doggies,temperament]);
 
 
    const sortDesc = key => (a, b) => a[key] < b[key] ? 1 : -1;

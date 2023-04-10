@@ -83,7 +83,7 @@ let history = useHistory()
     // ...
   }
   fetchData(); 
-  },[id]);
+  },[dispatch,id]);
 
     
  if(Object.entries(dogDetail).length>0){

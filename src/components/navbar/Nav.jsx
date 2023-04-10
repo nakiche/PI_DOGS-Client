@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from 'styled-components';
 import SearchBar from '../searchBar/SearchBar.jsx'
-import { Link,useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavCard from './NavCard.jsx';
 
 const DivDogs = styled.div`
@@ -28,7 +28,7 @@ const H4 =styled.h4`
 
 
 export default function Nav({onSearch,dogDetailByName,onClose}) {  
-  const location = useLocation()
+  //const location = useLocation()
   
   const [doggies, setDoggies] = React.useState("");
 
