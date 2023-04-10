@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pi_dogs_client/static/css/main.dfd2cf37.chunk.css",
+    "main.js": "/pi_dogs_client/static/js/main.e35f938f.chunk.js",
+    "main.js.map": "/pi_dogs_client/static/js/main.e35f938f.chunk.js.map",
+    "runtime-main.js": "/pi_dogs_client/static/js/runtime-main.3619c6d3.js",
+    "runtime-main.js.map": "/pi_dogs_client/static/js/runtime-main.3619c6d3.js.map",
+    "static/js/2.6316ccaf.chunk.js": "/pi_dogs_client/static/js/2.6316ccaf.chunk.js",
+    "static/js/2.6316ccaf.chunk.js.map": "/pi_dogs_client/static/js/2.6316ccaf.chunk.js.map",
+    "static/js/3.3a19e983.chunk.js": "/pi_dogs_client/static/js/3.3a19e983.chunk.js",
+    "static/js/3.3a19e983.chunk.js.map": "/pi_dogs_client/static/js/3.3a19e983.chunk.js.map",
+    "index.html": "/pi_dogs_client/index.html",
+    "static/css/main.dfd2cf37.chunk.css.map": "/pi_dogs_client/static/css/main.dfd2cf37.chunk.css.map",
+    "static/js/2.6316ccaf.chunk.js.LICENSE.txt": "/pi_dogs_client/static/js/2.6316ccaf.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/pi_dogs_client/static/media/fatty-corgi.4a4f5a14.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3619c6d3.js",
+    "static/js/2.6316ccaf.chunk.js",
+    "static/css/main.dfd2cf37.chunk.css",
+    "static/js/main.e35f938f.chunk.js"
+  ]
+}
