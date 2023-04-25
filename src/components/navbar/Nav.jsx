@@ -46,6 +46,9 @@ export default function Nav({onSearch,dogDetailByName,onClose}) {
       <Link to='/Form'>
         <H4 className="borderRight">Form</H4>
       </Link>   
+      <Link to='/'>
+        <H4 className="borderRight">Log out</H4>
+      </Link>   
      
     <SearchBar 
           onSearch={onSearch}
