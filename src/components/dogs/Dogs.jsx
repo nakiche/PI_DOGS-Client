@@ -75,7 +75,7 @@ export default function Dogs({dogTemperaments,doggies}) {
 
    }
 
-   using UseEffect to get lastest state
+   //using UseEffect to get lastest state
    React.useEffect(() => {
     let filterByTemperament=[]  
     
