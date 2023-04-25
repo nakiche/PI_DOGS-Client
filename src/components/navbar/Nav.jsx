@@ -55,7 +55,6 @@ export default function Nav({onSearch,dogDetailByName,onClose}) {
         />
    </Bloque>    
 
-  {/*{ location.pathname === '/home' && */}
    <DivDogs>   
       {doggies && doggies.map((c,b)=>     
              <NavCard key={b}
@@ -70,7 +69,6 @@ export default function Nav({onSearch,dogDetailByName,onClose}) {
          )  
       }
     </DivDogs>  
-  {/*}*/}
     </div>
    );
 }
