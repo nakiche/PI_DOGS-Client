@@ -9,7 +9,7 @@ import store from "../src/store/index.js";
 import axios from 'axios';
 
 //axios.defaults.baseURL ='http://localhost:3001'
-axios.defaults.baseURL ='https://pidogs-api-production-540d.up.railway.app/'
+axios.defaults.baseURL ='https://pidogs-api-production-f701.up.railway.app/'
 
 ReactDOM.render(
 
