@@ -120,7 +120,6 @@ export default function Dogs({dogTemperaments,doggies}) {
    let pageRedux= (dispatch(getCurrentPage(1)))
    setCurrentPage(pageRedux.payload)
  }
- 
   //pagination variables
    const indexOfLastPost = currentPage * postsPerPage;
    const indexOfFirstPost = indexOfLastPost - postsPerPage;

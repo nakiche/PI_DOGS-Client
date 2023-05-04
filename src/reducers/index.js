@@ -1,4 +1,4 @@
-import{ GET_DOGS,GET_DOGS_ID,GET_DOGS_NAME,GET_TEMPERAMENTS,CREATE_DOG,DELETE_SEARCH,CURRENT_PAGE,NEX_PREV_PAGE} from "../actions/index.js";
+import{ GET_DOGS,GET_DOGS_ID,GET_DOGS_NAME,GET_TEMPERAMENTS,CREATE_DOG,DELETE_SEARCH,CURRENT_PAGE,NEX_PREV_PAGE,RESET} from "../actions/index.js";
 
 
 const initialState = {
@@ -62,6 +62,12 @@ function rootReducer(state = initialState,action){
 		}
 	}
 
+	if(action.type===RESET){
+		return{
+			...state,
+			dogById:[]
+		}
+	}
 	return {...state}
 }
 

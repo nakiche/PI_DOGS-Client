@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React  from "react";
-import  {getDogsById}  from '../../actions/index.js';
+import  {getDogsById,resetState}  from '../../actions/index.js';
 import { useDispatch,useSelector } from 'react-redux'
 import { useParams } from 'react-router';
 import { useHistory} from 'react-router-dom';
@@ -85,7 +85,7 @@ let history = useHistory()
   fetchData(); 
   },[dispatch,id]);
 
-    
+  console.log(dogDetail)
  if(Object.entries(dogDetail).length>0){
     let newArray=[]
     if (dogDetail[0].Temperaments.length !== 0 )
@@ -112,6 +112,7 @@ let history = useHistory()
       </DivCard>
       <div>
       <Buttons onClick={()=>{
+               dispatch(resetState())
                history.push('/home')
               }} >Go back</Buttons>  
       </div>
@@ -122,7 +123,7 @@ let history = useHistory()
     
     return (
       <div>
-
+        Loading...
       </div>
       )
   }

@@ -8,10 +8,8 @@ export const CREATE_DOG = 'CREATE_DOG';
 export const DELETE_SEARCH = 'DELETE_SEARCH'
 export const CURRENT_PAGE = 'CURRENT_PAGE'
 export const NEX_PREV_PAGE = 'NEX_PREV_PAGE'
+export const RESET = 'RESET'
 
-//inicializamos en 999 para que los perros creados tengan
-//id mayor a 1000
-let id = 999;
 
 export const getDogs  = () => {
   console.log('GET_DOGS')
@@ -76,8 +74,7 @@ export const getTemperaments  = () => {
 
 export const createDog  = (dogData) => {
   console.log('CREATE_DOG')
-  id++
-    let objeto ={"id": id,
+    let objeto ={"id": dogData.id,
                 "image": "no_image",
                 "name": dogData.name,
                 "min_height": parseInt(dogData.min_height),
@@ -88,7 +85,6 @@ export const createDog  = (dogData) => {
                 "max_life_span": parseInt(dogData.max_life_span),
                 "temperament":dogData.temperament,
     }
-   
     // Completa la funcion
     return async (dispatch)=>{
       
@@ -126,4 +122,12 @@ export const nextPrevPag = (action) => {
       type:NEX_PREV_PAGE,
       payload:action
     })   
+}
+
+export const resetState = () => {
+  console.log('RESET')
+ // Completa la funcion
+   return ({
+     type:RESET
+   })   
 }

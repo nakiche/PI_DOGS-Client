@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import  {getTemperaments}  from '../../actions/index.js';
+import  {getTemperaments,getDogs}  from '../../actions/index.js';
 import { useDispatch,useSelector } from 'react-redux'
 import Validate from './Validate.jsx';
 import { useHistory} from 'react-router-dom';
@@ -42,12 +42,14 @@ const dispatch = useDispatch();
 let history = useHistory()
 
 const dogTemperaments  = useSelector((state) =>state.dogTemperaments);
+const doggies  = useSelector((state) =>state.dogs);
 
 React.useEffect(() => {
    async function fetchData() {
     // You can await here
     try{
     await dispatch(getTemperaments());
+    await dispatch(getDogs()); //dogs
     }catch(e)
     {
       window.alert(e)
@@ -71,6 +73,7 @@ const [errors, setErrors] = React.useState({
 });
 
 const [dogData, setDogData] = React.useState({ 
+  id:doggies.length,
   name: '', 
   min_life_span: '' ,
   max_life_span:'',

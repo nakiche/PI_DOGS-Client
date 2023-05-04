@@ -57,11 +57,12 @@ font-style:oblique;
 export default function NavCard({id,name,temperaments,image,min_weight,max_weight,onClose}) {  
 
    let newArray=[]
-   if (temperaments[0].name.length > 1 )
+   if (temperaments[0].name.length !==0  )
    {
       newArray =temperaments.map(e=> e.name)
    }else{
       newArray=temperaments
+      console.log(newArray)
    }
 
    return (
